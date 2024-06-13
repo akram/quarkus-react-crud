@@ -7,7 +7,6 @@ function App() {
   return (
     <div>
             <h1>Quarkus React CRUD</h1>
-            <AddPerson />
             <PersonList />
         </div>
       
