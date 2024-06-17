@@ -11,8 +11,8 @@ pipeline:
         build: <+input>
   stages:
     - stage:
-        name: a
-        identifier: a
+        name: build
+        identifier: build
         description: ""
         type: CI
         spec:
@@ -30,7 +30,7 @@ pipeline:
                   name: BuildAndPushDockerRegistry_1
                   identifier: BuildAndPushDockerRegistry_1
                   spec:
-                    connectorRef: account.harnessImage
-                    repo: akram
+                    connectorRef: docker
+                    repo: akram/argocd
                     tags:
-                      - latest
+                      - harness
